@@ -1,4 +1,4 @@
-# nuxt-game-api
+# nuxt-movie
 
 ## Build Setup
 
