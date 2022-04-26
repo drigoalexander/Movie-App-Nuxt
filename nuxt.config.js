@@ -32,6 +32,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    "@nuxtjs/apollo",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
   ],
@@ -62,6 +63,14 @@ export default {
       plugins: {
         tailwindcss: {},
         autoprefixer: {},
+      },
+    },
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: "https://nuxt-movie-drigo.hasura.app/v1/graphql",
       },
     },
   },
