@@ -15,7 +15,10 @@ export default {
   css: ["@/assets/css/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "~/plugins/persistedState.client.js", ssr: false }],
+  plugins: [
+    { src: "~/plugins/persistedState.client.js", ssr: false },
+    "~/plugins/apollo-client.js",
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -33,6 +36,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/apollo",
+    "@nuxtjs/composition-api/module",
+
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
   ],
@@ -65,8 +70,12 @@ export default {
         autoprefixer: {},
       },
     },
+    transpile: ["@vue/apollo-composable"],
   },
-
+  serverMiddleware: [{ path: "/", handler: "~/server/index.js" }],
+  env: {
+    nuxtApiUrl: process.env.NUXT_API_URL, // the variable from the .env file, which must be in the root of the project
+  },
   apollo: {
     clientConfigs: {
       default: {
