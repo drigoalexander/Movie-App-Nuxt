@@ -7,7 +7,11 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        open: "Open Sans",
+      },
+    },
   },
   plugins: [],
 };
