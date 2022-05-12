@@ -35,7 +35,7 @@
       v-if="movieName == '' && isCategory == false"
       class="pb-10 flex flex-wrap justify-center items-center bg-[#001B2E]"
     >
-      <div v-for="mov in movie" :key="mov.id" class="">
+      <div v-for="(mov, idx) in movie" :key="mov.id" class="">
         <nuxt-link :to="{ name: 'movies-movieid', params: { id: mov.id } }">
           <div>
             <!-- {{ Movie }} -->
@@ -58,13 +58,13 @@
               <div class="mx-6 my-4 border-b border-gray-light">
                 <div class="flex justify-between items-start gap-10">
                   <div
-                    v-if="!isEditing"
+                    v-if="isEditing !== idx"
                     class="font-medium text-base text-gray-darker mb-4"
                   >
                     {{ mov.Name }}
                   </div>
 
-                  <div class="" v-else-if="isEditing">
+                  <div class="" v-else>
                     <input
                       type="text"
                       name=""
@@ -75,8 +75,8 @@
                     />
                   </div>
                   <button
-                    @click="editMovie"
-                    v-if="!isEditing"
+                    @click="() => editMovie(idx)"
+                    v-if="isEditing !== idx"
                     class="w-auto bg-gray-600 py-1 px-2 rounded-md text-white font-light text-s,"
                   >
                     Edit
@@ -84,7 +84,7 @@
 
                   <button
                     @click="cancelEdit"
-                    v-else-if="isEditing"
+                    v-else
                     class="w-auto bg-gray-600 py-1 px-2 rounded-md text-sm text-white font-light"
                   >
                     Cancel
@@ -94,7 +94,7 @@
                 <div>
                   <p
                     class="font-normal text-gray-dark text-sm mb-2"
-                    v-if="!isEditing"
+                    v-if="isEditing !== idx"
                   >
                     Genre : {{ mov.movie_genre_fk[0].genre_name }}
                   </p>
@@ -113,7 +113,7 @@
                 <div>
                   <p
                     class="font-normal text-gray-dark text-sm mb-4"
-                    v-if="!isEditing"
+                    v-if="isEditing !== idx"
                   >
                     Date : {{ mov.Release_Date }}
                   </p>
@@ -132,7 +132,7 @@
                 <div>
                   <p
                     class="font-normal text-gray-dark text-sm mb-4"
-                    v-if="!isEditing"
+                    v-if="isEditing !== idx"
                   >
                     Author : {{ mov.Author }}
                   </p>
@@ -149,7 +149,10 @@
               </div>
               <div class="mx-6 my-4 flex">
                 <div>
-                  <div class="flex-grow h-64 overflow-auto" v-if="!isEditing">
+                  <div
+                    class="flex-grow h-64 overflow-auto"
+                    v-if="isEditing !== idx"
+                  >
                     <p class="">
                       {{ mov.Description }}
                     </p>
@@ -241,7 +244,7 @@ export default {
       genre: [],
       category: [],
       isCategory: false,
-      isEditing: false,
+      isEditing: null,
       Name: "",
       Genre: "",
       Date: "",
@@ -277,8 +280,8 @@ export default {
   },
 
   methods: {
-    editMovie() {
-      this.isEditing = true;
+    editMovie(idx) {
+      this.isEditing = idx;
       console.log(this.isEditing);
     },
 
