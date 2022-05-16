@@ -34,13 +34,13 @@
               >
                 <h1 class="text-white text-xl font-semibold">Genre | Rating</h1>
                 <h1 class="text-white text-4xl font-bold w-1/2">
-                  {{ movie_by_pk.Name }}
+                  {{ movie_by_pk ? movie_by_pk.Name : "" }}
                 </h1>
                 <p class="text-white text-lg font-medium -mt-6">
-                  {{ movie_by_pk.Author }}
+                  {{ movie_by_pk ? movie_by_pk.Author : "" }}
                 </p>
                 <p class="text-white text-xl font-bold w-1/2">
-                  {{ movie_by_pk.Description }}
+                  {{ movie_by_pk ? movie_by_pk.Description : "" }}
                 </p>
                 <button
                   class="cursor-pointer hover:scale-110 duration-300 ease-in-out rounded-full font-bold w-auto px-10 py-2 bg-gradient-to-r from-[#00AFD2] via-[#55C0AB] to-[#7BC79A]"
@@ -74,18 +74,13 @@ export default {
           }
         }
       `,
-      variables: {
-        id: 5,
+      variables() {
+        return {
+          id: this.$route.params.id,
+        };
       },
     },
   },
-
-  data() {
-    return {
-      id: this.$route.params.id,
-    };
-  },
-
   methods: {
     redPage() {
       this.$router.push("/");
