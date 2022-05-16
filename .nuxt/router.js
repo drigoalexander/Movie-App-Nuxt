@@ -4,14 +4,14 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _77826d79 = () => interopDefault(import('..\\pages\\admin.vue' /* webpackChunkName: "pages/admin" */))
-const _0fbabc93 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _072aba53 = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
-const _33f6c2de = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
-const _1d7c49f9 = () => interopDefault(import('..\\pages\\subs.vue' /* webpackChunkName: "pages/subs" */))
-const _a91f57be = () => interopDefault(import('..\\pages\\movies\\streaming\\_id.vue' /* webpackChunkName: "pages/movies/streaming/_id" */))
-const _7e310256 = () => interopDefault(import('..\\pages\\movies\\_movieid.vue' /* webpackChunkName: "pages/movies/_movieid" */))
-const _4613197c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _a1240a3c = () => interopDefault(import('../pages/admin.vue' /* webpackChunkName: "pages/admin" */))
+const _47a649fc = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
+const _1b2edd08 = () => interopDefault(import('../pages/profile.vue' /* webpackChunkName: "pages/profile" */))
+const _0d063ad6 = () => interopDefault(import('../pages/signup.vue' /* webpackChunkName: "pages/signup" */))
+const _eab62920 = () => interopDefault(import('../pages/subs.vue' /* webpackChunkName: "pages/subs" */))
+const _793a20fe = () => interopDefault(import('../pages/movies/streaming/_id.vue' /* webpackChunkName: "pages/movies/streaming/_id" */))
+const _745d6caa = () => interopDefault(import('../pages/movies/_movieid.vue' /* webpackChunkName: "pages/movies/_movieid" */))
+const _7dfea6e5 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -26,35 +26,35 @@ export const routerOptions = {
 
   routes: [{
     path: "/admin",
-    component: _77826d79,
+    component: _a1240a3c,
     name: "admin"
   }, {
     path: "/login",
-    component: _0fbabc93,
+    component: _47a649fc,
     name: "login"
   }, {
     path: "/profile",
-    component: _072aba53,
+    component: _1b2edd08,
     name: "profile"
   }, {
     path: "/signup",
-    component: _33f6c2de,
+    component: _0d063ad6,
     name: "signup"
   }, {
     path: "/subs",
-    component: _1d7c49f9,
+    component: _eab62920,
     name: "subs"
   }, {
     path: "/movies/streaming/:id?",
-    component: _a91f57be,
+    component: _793a20fe,
     name: "movies-streaming-id"
   }, {
     path: "/movies/:movieid?",
-    component: _7e310256,
+    component: _745d6caa,
     name: "movies-movieid"
   }, {
     path: "/",
-    component: _4613197c,
+    component: _7dfea6e5,
     name: "index"
   }],
 

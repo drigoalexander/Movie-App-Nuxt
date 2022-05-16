@@ -2,57 +2,57 @@
   {
     "name": "admin",
     "path": "/admin",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\admin.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/admin.vue",
     "chunkName": "pages/admin",
-    "_name": "_77826d79"
+    "_name": "_a1240a3c"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\login.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/login.vue",
     "chunkName": "pages/login",
-    "_name": "_0fbabc93"
+    "_name": "_47a649fc"
   },
   {
     "name": "profile",
     "path": "/profile",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\profile.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/profile.vue",
     "chunkName": "pages/profile",
-    "_name": "_072aba53"
+    "_name": "_1b2edd08"
   },
   {
     "name": "signup",
     "path": "/signup",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\signup.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/signup.vue",
     "chunkName": "pages/signup",
-    "_name": "_33f6c2de"
+    "_name": "_0d063ad6"
   },
   {
     "name": "subs",
     "path": "/subs",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\subs.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/subs.vue",
     "chunkName": "pages/subs",
-    "_name": "_1d7c49f9"
+    "_name": "_eab62920"
   },
   {
     "name": "movies-streaming-id",
     "path": "/movies/streaming/:id?",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\movies\\\\streaming\\\\_id.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/movies/streaming/_id.vue",
     "chunkName": "pages/movies/streaming/_id",
-    "_name": "_a91f57be"
+    "_name": "_793a20fe"
   },
   {
     "name": "movies-movieid",
     "path": "/movies/:movieid?",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\movies\\\\_movieid.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/movies/_movieid.vue",
     "chunkName": "pages/movies/_movieid",
-    "_name": "_7e310256"
+    "_name": "_745d6caa"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\index.vue",
+    "component": "/Users/adifdwimaulana/Documents/Adif/vue-mini-project/Movie-App-Nuxt/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_4613197c"
+    "_name": "_7dfea6e5"
   }
 ]
