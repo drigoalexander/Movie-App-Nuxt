@@ -1,5 +1,5 @@
-export { default as Cards } from '../..\\components\\cards.vue'
-export { default as Hero } from '../..\\components\\Hero.vue'
+export { default as Hero } from '../../components/Hero.vue'
+export { default as Cards } from '../../components/cards.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
