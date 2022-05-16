@@ -86,7 +86,7 @@ this.id = this.$route.params.id
 
 <style>
 .gambarfilm .gambarfilm2 {
-  background-image: url(../../assets/endgame.jpg);
+  background-image: url(../../../assets/endgame.jpg);
   /* background-size: 100% auto; */
 }
 </style>

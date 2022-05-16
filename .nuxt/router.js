@@ -9,7 +9,7 @@ const _0fbabc93 = () => interopDefault(import('..\\pages\\login.vue' /* webpackC
 const _072aba53 = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
 const _33f6c2de = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
 const _1d7c49f9 = () => interopDefault(import('..\\pages\\subs.vue' /* webpackChunkName: "pages/subs" */))
-const _6ae6e4e9 = () => interopDefault(import('..\\pages\\movies\\streaming.vue' /* webpackChunkName: "pages/movies/streaming" */))
+const _a91f57be = () => interopDefault(import('..\\pages\\movies\\streaming\\_id.vue' /* webpackChunkName: "pages/movies/streaming/_id" */))
 const _7e310256 = () => interopDefault(import('..\\pages\\movies\\_movieid.vue' /* webpackChunkName: "pages/movies/_movieid" */))
 const _4613197c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -45,9 +45,9 @@ export const routerOptions = {
     component: _1d7c49f9,
     name: "subs"
   }, {
-    path: "/movies/streaming",
-    component: _6ae6e4e9,
-    name: "movies-streaming"
+    path: "/movies/streaming/:id?",
+    component: _a91f57be,
+    name: "movies-streaming-id"
   }, {
     path: "/movies/:movieid?",
     component: _7e310256,

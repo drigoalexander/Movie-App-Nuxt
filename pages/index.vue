@@ -23,7 +23,7 @@
           <div class="flex flex-col gap-6">
             <div class="flex flex-col items-start gap-6">
               <p class="text-lg text-[#F5F5F5] font-medium">New Movies</p>
-              <h1 class="text-white">{{sorted}}</h1>
+              <!-- <h1 class="text-white">{{sorted}}</h1> -->
               <ul class="w-full flex flex-col gap-6" v-for="(sor,idx) in movie" :key="idx">
                 <li class="" v-if="idx <= 1">
                   <div
@@ -186,7 +186,7 @@ export default {
 
   methods: {
     redPage(idM) {
-      this.$router.push({name: 'movies-streaming' , params: {id: idM}})
+      this.$router.push({name: 'movies-streaming-id' , params: {id: idM}})
     }
   }
 };
