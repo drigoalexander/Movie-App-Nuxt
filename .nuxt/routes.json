@@ -1,0 +1,50 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\admin.vue",
+    "chunkName": "pages/admin"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "profile",
+    "path": "/profile",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\profile.vue",
+    "chunkName": "pages/profile"
+  },
+  {
+    "name": "signup",
+    "path": "/signup",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\signup.vue",
+    "chunkName": "pages/signup"
+  },
+  {
+    "name": "subs",
+    "path": "/subs",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\subs.vue",
+    "chunkName": "pages/subs"
+  },
+  {
+    "name": "movies-streaming",
+    "path": "/movies/streaming",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\movies\\\\streaming.vue",
+    "chunkName": "pages/movies/streaming"
+  },
+  {
+    "name": "movies-movieid",
+    "path": "/movies/:movieid?",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\movies\\\\_movieid.vue",
+    "chunkName": "pages/movies/_movieid"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\DELL\\\\Documents\\\\Vue\\\\Movie-App-Nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]

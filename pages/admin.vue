@@ -23,7 +23,7 @@
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Author
           </label>
@@ -32,7 +32,7 @@
           <input
             v-model="Author"
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-            id="inline-password"
+            id=""
             type="text"
           />
         </div>
@@ -42,7 +42,7 @@
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Poster Path
           </label>
@@ -51,7 +51,7 @@
           <input
             v-model="poster_path"
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-            id="inline-password"
+            id=""
             type="text"
           />
         </div>
@@ -60,7 +60,7 @@
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Description
           </label>
@@ -69,7 +69,7 @@
           <input
             v-model="Description"
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-            id="inline-password"
+            id=""
             type="text"
           />
         </div>
@@ -78,7 +78,7 @@
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Rating
           </label>
@@ -87,7 +87,7 @@
           <input
             v-model="Rating"
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-            id="inline-password"
+            id=""
             type="text"
           />
         </div>
@@ -96,7 +96,7 @@
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Release Date
           </label>
@@ -105,11 +105,54 @@
           <input
             v-model="Release_Date"
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-            id="inline-password"
+            id=""
             type="date"
           />
         </div>
+        
       </div>
+
+       <div class="md:flex md:items-center mb-6">
+        <div class="md:w-1/3">
+          <label
+            class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+            for=""
+          >
+            Video Path
+          </label>
+        </div>
+        <div class="md:w-2/3">
+          <input
+            v-model="video_path"
+            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+            id=""
+            type="text"
+          />
+        </div>
+        
+      </div>
+
+      <div class="md:flex md:items-center mb-6">
+        <div class="md:w-1/3">
+          <label
+            class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+            for=""
+          >
+            Genre
+          </label>
+        </div>
+        <div class="md:w-2/3">
+          <input
+            v-model="genre_id"
+            class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+            id=""
+            type="text"
+          />
+        </div>
+        
+      </div>
+
+
       <div class="md:flex md:items-center">
         <div class="md:w-1/3"></div>
         <div class="md:w-2/3">
@@ -124,12 +167,12 @@
       </div>
     </form>
 
-    <div class="flex flex-col items-start justify-start">
+    <!-- <div class="flex flex-col items-start justify-start">
       <div class="md:flex md:items-center mb-6">
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Delete Movie
           </label>
@@ -138,7 +181,7 @@
           <input
             v-model="Name"
             class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-            id="inline-password"
+            id=""
             type="text"
             placeholder="Movie Name"
           />
@@ -156,14 +199,14 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="flex flex-col items-start justify-start">
+    <!-- <div class="flex flex-col items-start justify-start">
       <div class="md:flex md:items-center mb-6">
         <div class="md:w-1/3">
           <label
             class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-            for="inline-password"
+            for=""
           >
             Update Movie
           </label>
@@ -173,7 +216,7 @@
             <input
               v-model="Name"
               class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-              id="inline-password"
+              id=""
               type="text"
               placeholder="Movie Name"
             />
@@ -182,15 +225,15 @@
             <input
               v-model="id"
               class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-              id="inline-password"
+              id=""
               type="text"
               placeholder="ID Movie"
             />
           </div>
         </div>
       </div>
-    </div>
-    <div class="md:flex md:items-center">
+    </div> -->
+    <!-- <div class="md:flex md:items-center">
       <div class="md:w-1/3"></div>
       <div class="md:w-2/3">
         <button
@@ -201,7 +244,7 @@
           Submit
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -229,11 +272,13 @@ export default {
       movie: [],
       Name: "",
       poster_path: "",
+      video_path: "",
       Release_Date: "",
       Rating: "",
       Description: "",
       Author: "",
       id: "",
+      genre_id: ""
     };
   },
 
@@ -247,7 +292,9 @@ export default {
             $Release_Date: date!
             $Description: String!
             $poster_path: String!
+            $video_path: String!
             $Rating: Int!
+            $genre_id: Int!
           ) {
             insert_movie(
               objects: {
@@ -257,6 +304,8 @@ export default {
                 Rating: $Rating
                 poster_path: $poster_path
                 Release_Date: $Release_Date
+                video_path:  $video_path
+                genre_id: $genre_id
               }
             ) {
               returning {
@@ -266,6 +315,8 @@ export default {
                 Rating
                 Release_Date
                 poster_path
+                video_path
+                genre_id
               }
             }
           }
@@ -277,6 +328,8 @@ export default {
           Rating: this.Rating,
           Release_Date: this.Release_Date,
           poster_path: this.poster_path,
+          genre_id: this.genre_id,
+          video_path: this.video_path
         },
       });
 
