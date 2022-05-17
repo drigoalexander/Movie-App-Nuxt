@@ -1,5 +1,5 @@
-export { default as Cards } from '../..\\components\\cards.vue'
-export { default as Hero } from '../..\\components\\Hero.vue'
+export const Cards = () => import('../..\\components\\cards.vue' /* webpackChunkName: "components/cards" */).then(c => wrapFunctional(c.default || c))
+export const Hero = () => import('../..\\components\\Hero.vue' /* webpackChunkName: "components/hero" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

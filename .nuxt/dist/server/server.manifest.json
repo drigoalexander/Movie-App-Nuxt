@@ -1,0 +1,29 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/cards.js": "components/cards.js",
+    "components/hero.js": "components/hero.js",
+    "pages/admin.js": "pages/admin.js",
+    "pages/index.js": "pages/index.js",
+    "pages/login.js": "pages/login.js",
+    "pages/movies/_movieid.js": "pages/movies/_movieid.js",
+    "pages/movies/streaming/_id.js": "pages/movies/streaming/_id.js",
+    "pages/profile.js": "pages/profile.js",
+    "pages/signup.js": "pages/signup.js",
+    "pages/subs.js": "pages/subs.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/cards.js": "components/cards.js.map",
+    "components/hero.js": "components/hero.js.map",
+    "pages/admin.js": "pages/admin.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/login.js": "pages/login.js.map",
+    "pages/movies/_movieid.js": "pages/movies/_movieid.js.map",
+    "pages/movies/streaming/_id.js": "pages/movies/streaming/_id.js.map",
+    "pages/profile.js": "pages/profile.js.map",
+    "pages/signup.js": "pages/signup.js.map",
+    "pages/subs.js": "pages/subs.js.map",
+    "server.js": "server.js.map"
+  }
+}
